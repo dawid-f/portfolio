@@ -1,0 +1,32 @@
+/* Media Query Breakpoints */
+$mobileS: "320px";
+$mobileM: "375px";
+$mobileL: "480px";
+$tablet: "768px";
+$laptop: "1024px";
+$desktop: "1200px";
+/* Font Family */
+$ff-primary: "Montserrat", sans-serif;
+$ff-secondary: "Inter", sans-serif;
+$ff-title: "Poppins", sans-serif;
+/* Colors */
+$bg-clr--primary: rgb(45, 45, 45);
+$bg-clr--secondary: rgb(55, 55, 55);
+$bg-clr--sticky: rgba(35, 35, 35, 0.95);
+$bg-clr--menu-active: rgba(140, 138, 138, 0.3);
+$menu-active--svg: rgb(193, 168, 142);
+$bg-clr--menu-links: rgba(35, 35, 35, 0);
+$bg-clr--footer: rgb(35, 35, 35);
+$font-clr--light: #fff;
+$font-clr--dark: rgb(45, 45, 45);
+$accent-clr: rgb(169 146 125);
+$outline-clr: transparent;
+/* Misc */
+$transition: all 0.3s linear;
+$spacing: 0.1rem;
+$spacing-small: 1px;
+$radius: 0.25rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1140px;
+$fixed-width: 700px;

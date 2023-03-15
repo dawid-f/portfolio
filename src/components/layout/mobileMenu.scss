@@ -1,0 +1,72 @@
+@import "../../assets/scssStyles/variables";
+
+.mobile-menu {
+  height: 4rem;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  z-index: 2;
+  background-color: $bg-clr--footer;
+}
+
+.menu-inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-link {
+  cursor: pointer;
+  background-color: $bg-clr--menu-links;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  p {
+    font-size: 0;
+  }
+  svg {
+    position: relative;
+    z-index: -1;
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+  }
+  &:hover {
+    background-color: $bg-clr--menu-active;
+    svg {
+      color: $menu-active--svg;
+    }
+  }
+  &:first-child,
+  &:last-child {
+    font-size: 1.1rem;
+  }
+}
+
+.menu-link-active {
+  background-color: $bg-clr--menu-active;
+  svg {
+    color: $menu-active--svg;
+  }
+}
+
+@media screen and (min-width: $mobileL) {
+  .menu-link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-menu {
+    display: none;
+  }
+}
