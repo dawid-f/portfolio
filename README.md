@@ -7,7 +7,6 @@
 - SCSS
 - Javascript
 - React
-- Contentful
 
 Live site: [https://dficek.netlify.app](https://dficek.netlify.app).
 
