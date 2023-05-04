@@ -16,16 +16,17 @@ const About = () => {
           <div className='about-text'>
             <p>
               I am a front end developer, who started out the journey of web
-              development with JavaScript around 2.5 years ago. I always loved,
-              and enjoyed using javascript, both vanilla and React.
+              development with JavaScript around 2.5 years ago.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              ex dignissimos cum sit hic ipsum, possimus non commodi sunt totam.
+              I enjoy working with VanillaJS and React.js because of their
+              versatility, ease of use, and the vast community support. I have
+              experience in building responsive, mobile-first, and user-friendly
+              web applications that are optimized for speed and performance.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              delectus voluptates recusandae amet ducimus autem.
+              I am excited to continue my journey in web development and to work
+              on more challenging projects that push me beyond my limits.
             </p>
           </div>
         </div>

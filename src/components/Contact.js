@@ -24,7 +24,11 @@ const Contact = () => {
               </i>
               dawidficek@tutamail.com
             </a>
-            <a href='https://linkedin.com' target={"_blank"} rel={"noreferrer"}>
+            <a
+              href='https://linkedin.com/mwlite/in/dawid-ficek-4244951a9'
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
               <i>
                 <ImLinkedin2 />
               </i>

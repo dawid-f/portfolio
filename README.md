@@ -1,12 +1,16 @@
 # My Portfolio
 
-(Initial commit - App still in development)
+My personal Portfolio.
 
 ## Technologies used:
 
-- SCSS
-- Javascript
 - React
+- JavaScript
+- SCSS
 
-Live site: [https://dficek.netlify.app](https://dficek.netlify.app).
+## Functionality:
 
+- Interactive Navbar and Mobile Menu
+- Email.js Contact Form
+
+Live site: [https://dficek.com](https://dficek.com).

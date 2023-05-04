@@ -6,7 +6,8 @@
 }
 
 .about-img {
-  max-width: 400px;
+  width: 100%;
+  max-width: 350px;
   padding: 1rem 0;
   margin: auto;
 }
@@ -15,20 +16,9 @@
   margin-bottom: 0;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .skills {
   margin-top: 5rem;
   position: relative;
-  animation: fade-in;
-  -webkit-animation: fade-in;
   ul {
     display: flex;
     justify-content: center;
@@ -82,7 +72,6 @@
   }
 
   .about-img {
-    max-width: unset;
     padding: 0;
   }
 

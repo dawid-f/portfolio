@@ -5,13 +5,11 @@ import {
   Footer,
   Modal,
   Loader,
-  Error,
   Home,
   About,
   Projects,
   Contact,
 } from "./components/index";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -23,9 +21,9 @@ const App = () => {
     }, 1000);
   }, []);
 
-  // if (loading) {
-  //   return <Loader />;
-  // }
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <main>

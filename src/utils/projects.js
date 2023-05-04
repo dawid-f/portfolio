@@ -1,8 +1,6 @@
 import { VscSourceControl } from "react-icons/vsc";
 import { MdLaunch } from "react-icons/md";
 import project1d from "../assets/images/project1-d.png";
-import project1m from "../assets/images/project1-m.png";
-import project2m from "../assets/images/project2-m.png";
 import project2d from "../assets/images/project2-d.png";
 
 export const projects = [
@@ -21,13 +19,13 @@ export const projects = [
   },
   {
     id: 2,
-    name: "jobify - job tracker",
+    name: "my portfolio",
     description:
-      "Quidem expedita consectetur corrupti pariatur sunt tempora neque dicta soluta enim assumenda perferendis. Mollitia sequi veniam non vitae architecto consectetur eos voluptatem.",
-    stack: ["react", "redux", "SCSS"],
+      "My portfolio project that was built using React and SCSS. It's a lightweight, performance-focused, Single Page Application.",
+    stack: ["react", "context API", "SCSS"],
     img: project2d,
-    siteUrl: "https://magsensor.pl",
-    gitUrl: "https://github.com/dawid-f/magsensor",
+    siteUrl: "https://dficek.netlify.app",
+    gitUrl: "https://github.com/dawid-f/portfolio",
     siteIcon: <MdLaunch />,
     gitIcon: <VscSourceControl />,
     cl: "project-b",
