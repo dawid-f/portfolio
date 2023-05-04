@@ -8,7 +8,7 @@ export const projects = [
     id: 1,
     name: "magsensor",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate, vel perferendis a harum consequuntur laudantium similique veniam accusantium.",
+      "Magsensor is a website built for a small sensory integration business. It's a reliable and robust application that is designed to grow and adapt as user needs evolve, thanks to the Headless CMS - Contentful. This app is optimized for speed and performance, ensuring that users can access it quickly and efficiently.",
     stack: ["gatsby", "contentful", "styled-components"],
     img: project1d,
     siteUrl: "https://magsensor.pl",
