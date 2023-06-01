@@ -3,19 +3,22 @@ import { useState, createContext } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
+  // State for App Loading
+  const [loading, setLoading] = useState(false);
+
   // State for Modal (Form Submission)
   const [modalActive, setModalActive] = useState(false);
 
   // State for sticky Navbar
   const [scrolled, setScrolled] = useState(false);
 
-  // Sticky Navbar
+  // Sticky Navbar on Scroll
   const stickyNavbar = () => {
     const offset = window.scrollY;
     offset > 30 ? setScrolled(true) : setScrolled(false);
   };
 
-  // Navigate to section when Navbar or Mobile link is clicked
+  // Navigate to section when Navbar link or Mobile link is clicked
   const goToSection = (e, num = 0) => {
     e.preventDefault();
     const target = e.target.getAttribute("href");
@@ -26,7 +29,7 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  // Highlight links in Navbar and Mobile menu as the page is scrolled to section
+  // Highlight links in Navbar and Mobile menu as the page is scrolled to the section
   const highlightLinksOnScroll = (
     linkType,
     classType,
@@ -90,6 +93,8 @@ const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
+        loading,
+        setLoading,
         goToSection,
         highlightLinksOnScroll,
         modalActive,

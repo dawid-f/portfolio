@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import {
   Navbar,
   MobileMenu,
@@ -10,16 +10,17 @@ import {
   Projects,
   Contact,
 } from "./components/index";
+import { AppContext } from "./context/context";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const { loading, setLoading } = useContext(AppContext);
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1000);
-  }, []);
+  }, [setLoading]);
 
   if (loading) {
     return <Loader />;

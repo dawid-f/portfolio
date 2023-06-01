@@ -24,7 +24,7 @@ export const projects = [
       "My portfolio project that was built using React and SCSS. It's a lightweight, performance-focused, Single Page Application.",
     stack: ["react", "context API", "SCSS"],
     img: project2d,
-    siteUrl: "https://dficek.netlify.app",
+    siteUrl: "https://dficek.com",
     gitUrl: "https://github.com/dawid-f/portfolio",
     siteIcon: <MdLaunch />,
     gitIcon: <VscSourceControl />,
