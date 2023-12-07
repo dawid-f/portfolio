@@ -1,0 +1,23 @@
+@import "../../assets/scssStyles/variables";
+
+.footer {
+  background-color: $bg-clr--footer;
+  height: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-icon {
+  color: darkred;
+  position: relative;
+  top: 2px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: $tablet) {
+  .footer {
+    margin-bottom: 0;
+  }
+}

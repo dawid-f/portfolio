@@ -1,0 +1,98 @@
+@import "../assets/scssStyles/variables";
+
+.about-inner,
+.about-content {
+  display: grid;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 350px;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.skills {
+  margin-top: 5rem;
+  position: relative;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2rem;
+  }
+}
+
+.skill-logo {
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  z-index: 1;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+.white {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    left: 2px;
+    z-index: 0;
+    height: 2.7rem;
+    width: 2.7rem;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .about-text {
+    margin: auto;
+  }
+
+  .about-img {
+    padding: 0;
+  }
+
+  .skill-logo {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .white::after {
+    height: 3.7rem;
+    width: 3.7rem;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .about-inner {
+    grid-template-columns: auto;
+  }
+
+  .about-content {
+    place-items: center;
+    gap: 8rem;
+  }
+}

@@ -1,0 +1,153 @@
+@import "_typography.scss";
+@import "_variables.scss";
+
+/*
+==========
+Global Styles
+==========
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ff-primary;
+  background: $bg-clr--primary;
+  color: $font-clr--light;
+  line-height: 1.8;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+.btn,
+input,
+textarea {
+  text-decoration: none;
+  color: $font-clr--light;
+  outline-color: $outline-clr;
+  outline-offset: 1px;
+  outline-width: 2px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  background: $accent-clr;
+  color: $font-clr--light;
+  padding: 0.8rem 0.75rem;
+  letter-spacing: $spacing;
+  display: inline-block;
+  line-height: initial;
+  position: relative;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  &:hover {
+    filter: brightness(130%);
+    color: $font-clr--dark;
+    -webkit-filter: brightness(130%);
+  }
+}
+
+/* Section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+  word-spacing: 0.5rem;
+  font-family: $ff-title;
+  -webkit-text-stroke: 1px $font-clr--light;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  margin-bottom: 3rem;
+  span {
+    display: block;
+    font-size: initial;
+    text-transform: initial;
+    margin-top: 0.5rem;
+    -webkit-text-stroke: 0;
+    color: $accent-clr;
+    word-spacing: 0.25rem;
+    letter-spacing: $spacing-small;
+  }
+}
+
+.section-title-active {
+  color: $accent-clr !important;
+  -webkit-text-stroke: 1px $accent-clr !important;
+}
+
+.about,
+.contact {
+  background-color: $bg-clr--secondary;
+  .section-title {
+    color: $bg-clr--secondary;
+  }
+}
+
+.projects {
+  background-color: $bg-clr--primary;
+  .section-title {
+    color: $bg-clr--primary;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  body {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section-center {
+    width: 90vw;
+  }
+}

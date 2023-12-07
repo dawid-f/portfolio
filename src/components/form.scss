@@ -1,0 +1,54 @@
+@import "../assets/scssStyles/variables";
+
+.form {
+  max-width: 550px;
+  margin: 0 auto;
+  button {
+    width: 100%;
+  }
+}
+
+label {
+  font-size: 0;
+}
+
+input,
+textarea {
+  padding: 0.8rem 1rem;
+  letter-spacing: 1px;
+  width: 100%;
+  resize: none;
+  margin-bottom: 1rem;
+  font-family: $ff-primary;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  background-color: $bg-clr--primary;
+  color: $font-clr--light;
+  border: none;
+  &::placeholder {
+    color: $font-clr--light;
+  }
+  &:focus {
+    filter: brightness(150%);
+    -webkit-filter: brightness(150%);
+  }
+  &:-webkit-autofill {
+    -webkit-text-fill-color: $font-clr--light;
+    -webkit-box-shadow: 0 0 0px 1000px $bg-clr--primary inset;
+  }
+  &:-moz-autofill {
+    -moz-text-fill-color: $font-clr--light;
+    -moz-box-shadow: 0 0 0px 1000px $bg-clr--primary inset;
+  }
+  &:-o-autofill {
+    -o-text-fill-color: $font-clr--light;
+    -o-box-shadow: 0 0 0px 1000px $bg-clr--primary inset;
+  }
+  &:-khtml-autofill {
+    -khtml-text-fill-color: $font-clr--light;
+    -khtml-box-shadow: 0 0 0px 1000px $bg-clr--primary inset;
+  }
+}

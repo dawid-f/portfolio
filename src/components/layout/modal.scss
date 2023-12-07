@@ -1,0 +1,39 @@
+@import "../../assets/scssStyles/variables";
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-clr--sticky;
+  z-index: 4;
+  padding: 1rem;
+}
+
+.modal-inner {
+  margin: auto;
+  text-align: center;
+  min-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $bg-clr--primary;
+  padding: 2rem;
+  box-shadow: $light-shadow;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+.modal-active {
+  display: flex;
+}
+
+@media screen and (min-width: $tablet) {
+  .modal {
+    margin-top: -5rem;
+  }
+}

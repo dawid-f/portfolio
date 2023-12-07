@@ -1,0 +1,56 @@
+@import "../../assets/scssStyles/variables";
+
+.nav {
+  display: none;
+  position: sticky;
+  height: 5rem;
+  z-index: 2;
+  top: 0;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  padding: 0 8px;
+  letter-spacing: 1px;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  &:hover {
+    color: $accent-clr;
+    box-shadow: 0 4px 0 -3px $accent-clr;
+  }
+}
+
+.link-active {
+  color: $accent-clr;
+  box-shadow: 0 4px 0 -3px $accent-clr;
+}
+
+.sticky {
+  background-color: $bg-clr--sticky;
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: $tablet) {
+  .nav,
+  .nav-links {
+    display: flex;
+  }
+}

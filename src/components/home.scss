@@ -1,0 +1,90 @@
+@import "../assets/scssStyles/variables";
+
+.hero {
+  min-height: calc(100vh - 4rem);
+  padding: 5rem 0;
+}
+
+.hero,
+.hero-inner {
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+}
+
+.intro {
+  margin-bottom: 0.3rem;
+}
+
+.hero-text {
+  color: $accent-clr;
+}
+
+.page-title {
+  position: relative;
+  left: -4px;
+}
+
+.hero-img {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.page-subtitle {
+  color: $font-clr--light;
+}
+
+@media screen and (min-width: $mobileL) {
+  .hero-text p {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .hero {
+    min-height: unset;
+    min-height: calc(100vh - 5rem);
+  }
+
+  .hero-inner {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .hero-text p {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .hero::before {
+    content: "";
+    position: absolute;
+    background: $bg-clr--secondary;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+  }
+
+  .hero-inner {
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero-inner {
+    gap: 5rem;
+  }
+}
