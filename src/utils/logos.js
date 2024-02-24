@@ -39,7 +39,7 @@ export const logos = [
     id: 7,
     cl: "white",
     url:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gatsby/gatsby-original.svg",
     delay: 0.7,
   },
   {
