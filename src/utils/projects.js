@@ -11,7 +11,7 @@ export const projects = [
       "Magsensor is a website built for a small sensory integration business. It's a reliable and robust application that is designed to grow and adapt as user needs evolve, thanks to the Headless CMS - Contentful. This app is optimized for speed and performance, ensuring that users can access it quickly and efficiently.",
     stack: ["gatsby", "contentful", "styled-components"],
     img: project1d,
-    siteUrl: "https://magsensor.netlify.app",
+    siteUrl: "https://magsensor.pl",
     gitUrl: "https://github.com/dawid-f/magsensor",
     siteIcon: <MdLaunch />,
     gitIcon: <VscSourceControl />,
